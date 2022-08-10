@@ -8,21 +8,52 @@
     <title>Sign-Up Page</title>
 </head>
 <body>
-    <div class="main">
-        <div class="leftSide">
-            <img id="leftImage" src="./images/chris-dickens-b9cRz523N9c-unsplash.jpg" alt="Photo of Chicago">
-        </div>
-        <div class="rightSide">
-            <div class="rightTopBlock">Please sign up for my fake online service! It does things and stuff and takes your information and sells it. Sign up now and get started.</div>
-            <div class="signUpBlock">
-                <div class="formDiv">
-                    
+    <div class="leftSide">
+        <img id="leftImage" src="./images/chris-dickens-b9cRz523N9c-unsplash.jpg" alt="Photo of Chicago">
+    </div>
+    <div class="rightSide">
+        <div class="rightTopBlock">
+            <h1>Do a thing</h1>
+            <p>Please sign up for my fake online service! It does things and stuff and takes your information and sells it. Sign up now and get started.</p>
+            </div>
+        <div class="signUpBlock">
+            <div class="formDiv">
+                <div class="row">
+                    <form action="example.com/path" method="post">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                    </form>
+                    <form action="" method="post">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                    </form>
+                </div>
+                <div class="row">
+                    <form action="" method="post">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </form>
+                    <form action="" method="post">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+                    </form>
+                </div>
+                <div class="row">
+                    <form action="" method="post">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </form>
+                    <form action="" method="post">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                    </form>
                 </div>
             </div>
-            <div class="rightBottomBlock">
-                <button id="createAccount">Create account</button>
-            </div>
         </div>
-    </div>
+        <div class="rightBottomBlock">
+            <button id="createAccount">Create account</button>
+            <p class="logIn">Already have an account? <a href="login.html">Log in.</a></p>
+        </div>
+</div>
 </body>
 </html>
