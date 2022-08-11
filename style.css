@@ -4,6 +4,8 @@
     --page-blue: #3b8aad;
     --page-grey: #D3D3D318;
     --page-blue-gray: #AFD1DE;
+    --logo-grey: #52525280;
+    --form-green: #18A558;
 }
 
 html {
@@ -13,23 +15,23 @@ html {
 body {
     display: flex;
     height: 100vh;
-    width: 100vw;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 h1 {
     display: flex;
     color: var(--page-blue);
     letter-spacing: 1px;
+    margin: 0;
 }
 
 p {
     line-height: 2;
     display: flex;
     flex-wrap: wrap;
-    word-break: break-all;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -51,26 +53,70 @@ button {
 label {
     display: block;
     font-weight: bold;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
 }
 
+input {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 0px 4px lightgrey;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+input, textarea {
+    transition: all 0.30s ease-in-out;
+    outline: none;
+    border: 1px solid #DDDDDD;
+  }
+   
+  input:focus, textarea:focus {
+    box-shadow: 0 0 1px var(--form-green);
+    padding: 10px;
+    border: 1px solid var(--form-green);
+  }
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+    .rightSide{
+
+        width: 100%;
+    }
+    .signUpBlock {
+        width: 100%;
+    }
+    
+}
 
 .leftSide {
     display: flex;
-    width: 30%;
+    width: 35%;
     justify-content: center;
-    overflow: hidden;
+}
+
+.logoDiv {
+    position: absolute;
+    display: flex;
+    background-color: var(--logo-grey);
+    height: 100px;
+    flex: 1 1 auto;
 }
 
 #leftImage {
     display: flex;
-    vertical-align: middle;
-    height: 100%;
-    width: auto;
+    vertical-align: bottom;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .rightSide {
     display: flex;
-    width: 70%;
+    width: 65%;
     flex-direction: column;
 }
 
@@ -79,11 +125,11 @@ label {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 30px;
+    padding-top: 0px;
 }
 
 .signUpBlock {
     display: flex;
-    padding: 30px;
     flex-wrap: wrap;
     background-color: white;
     box-shadow: 1px 1px 10px lightgrey;
@@ -92,13 +138,16 @@ label {
 .formDiv {
    display: flex;
    flex-direction: column;
+   align-items: center;
    flex-wrap: wrap;
-   gap: 30px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: ;
+    padding: 10px 0px 18px 30px;
     gap: 30px;
 }
 
