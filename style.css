@@ -4,7 +4,7 @@
     --page-blue: #3b8aad;
     --page-grey: #D3D3D318;
     --page-blue-gray: #AFD1DE;
-    --logo-grey: #52525280;
+    --logo-black: #00000080;
     --form-green: #18A558;
 }
 
@@ -108,7 +108,7 @@ input:focus, textarea:focus {
 
 .logoDiv {
     position: absolute;
-    background-color: var(--logo-grey);
+    background-color: var(--logo-black);
     width: 35%;
     top: 20%;
     color: white;
@@ -117,6 +117,8 @@ input:focus, textarea:focus {
     align-items: center;
     justify-content: center;
     font-size: 40px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 #logo {
@@ -166,6 +168,13 @@ input:focus, textarea:focus {
     align-items: center;
     padding: 10px 0px 18px 30px;
     gap: 50px;
+}
+
+#passwordMessage {
+    display: flex;
+    align-items: flex-start;
+    display: none;
+    color: red;
 }
 
 .rightBottomBlock {
