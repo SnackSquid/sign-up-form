@@ -8,6 +8,11 @@
     --form-green: #18A558;
 }
 
+@font-face {
+    font-family: "Rubik Dirt";
+    src: url(./font/RubikDirt-Regular.ttf);
+}
+
 html {
     background-color: var(--page-grey);
 }
@@ -24,6 +29,7 @@ h1 {
     color: var(--page-blue);
     letter-spacing: 1px;
     margin: 0;
+    padding: 0;
 }
 
 p {
@@ -55,7 +61,7 @@ label {
     font-weight: bold;
     padding-bottom: 5px;
     padding-left: 10px;
-
+    font-size: 12px;
 }
 
 input {
@@ -63,7 +69,7 @@ input {
     border: none;
     box-shadow: 0px 0px 4px lightgrey;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 8px;
 }
 
 input, textarea {
@@ -72,7 +78,7 @@ input, textarea {
     border: 1px solid #DDDDDD;
   }
    
-  input:focus, textarea:focus {
+input:focus, textarea:focus {
     box-shadow: 0 0 1px var(--form-green);
     padding: 10px;
     border: 1px solid var(--form-green);
@@ -81,6 +87,9 @@ input, textarea {
 @media (max-width: 800px) {
     body {
         flex-direction: column;
+    }
+    .leftSide{
+        width: 100%;
     }
     .rightSide{
 
@@ -100,10 +109,19 @@ input, textarea {
 
 .logoDiv {
     position: absolute;
-    display: flex;
     background-color: var(--logo-grey);
-    height: 100px;
-    flex: 1 1 auto;
+    width: 35%;
+    top: 20%;
+    color: white;
+    font-family: "Rubik Dirt", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#logo {
+    width: 80px;
 }
 
 #leftImage {
@@ -125,7 +143,7 @@ input, textarea {
     flex-direction: column;
     flex-wrap: wrap;
     padding: 30px;
-    padding-top: 0px;
+    padding-top: 15px;
 }
 
 .signUpBlock {
