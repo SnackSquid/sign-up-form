@@ -98,7 +98,6 @@ input:focus, textarea:focus {
     .signUpBlock {
         width: 100%;
     }
-    
 }
 
 .leftSide {
@@ -136,6 +135,7 @@ input:focus, textarea:focus {
     display: flex;
     width: 65%;
     flex-direction: column;
+    justify-content: center;
 }
 
 .rightTopBlock {
@@ -164,9 +164,8 @@ input:focus, textarea:focus {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: ;
     padding: 10px 0px 18px 30px;
-    gap: 30px;
+    gap: 50px;
 }
 
 .rightBottomBlock {
@@ -182,4 +181,10 @@ input:focus, textarea:focus {
     font-weight: 700;
     border-radius: 15px;
     box-shadow: 1px 1px 5px slategray;
+    transition-duration: 0.3s;
+}
+
+#createAccount:hover {
+    background-color: var(--page-blue);
+    cursor: pointer;
 }
