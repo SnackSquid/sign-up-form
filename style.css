@@ -84,22 +84,6 @@ input:focus, textarea:focus {
     border: 1px solid var(--form-green);
   }
 
-@media (max-width: 800px) {
-    body {
-        flex-direction: column;
-    }
-    .leftSide{
-        width: 100%;
-    }
-    .rightSide{
-
-        width: 100%;
-    }
-    .signUpBlock {
-        width: 100%;
-    }
-}
-
 .leftSide {
     display: flex;
     width: 35%;
@@ -171,7 +155,6 @@ input:focus, textarea:focus {
 }
 
 #passwordMessage {
-    display: flex;
     align-items: flex-start;
     display: none;
     color: red;
@@ -196,4 +179,15 @@ input:focus, textarea:focus {
 #createAccount:hover {
     background-color: var(--page-blue);
     cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    body {flex-direction: column;}
+    .leftSide{width: 100%;}
+    #leftImage {width: 100%;}
+    .logoDiv {width: 100%;
+    top: 10%;
+    }
+    .rightSide{width: 100%;}
+    .signUpBlock {width: 100%;}
 }

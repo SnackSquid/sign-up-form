@@ -1,8 +1,18 @@
-const password = document.querySelector('#password');
-const confirmPassword = document.querySelector('#confirmPassword');
+const passwordInput = document.querySelector('#password');
+const confirmPasswordInput = document.querySelector('#confirmPassword');
 const passwordMessage = document.querySelector('#passwordMessage');
 
+const email = /.+\@.+\./;
+
 function showPasswordMessage() {
-    if (password.value.match(confirmPassword)) passwordMessage.style.display = 'none';
-    else if (!password.value.match(confirmPassword)) passwordMessage.style.display = 'flex';
+
+    if (passwordInput.value !== confirmPasswordInput.value) {
+        passwordMessage.style.display = 'flex';
+    }
+    else {
+        passwordMessage.style.display = 'none';
+    }
 }
+
+passwordInput.addEventListener('input', showPasswordMessage);
+confirmPasswordInput.addEventListener('input', showPasswordMessage);
